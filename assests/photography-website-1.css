@@ -1,1 +1,112 @@
-css 
+/*basic css*/
+* {
+  font-family: "Proxima-Smbd";
+}
+
+.image-basics {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.flex-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  margin: 50px;
+  font-size: 60px;
+  color: #fff;
+}
+
+.seperator {
+  margin: 0 100px;
+  width: 1px;
+  height: 400px;
+  background-color: #fff;
+  opacity: 0.5;
+}
+.paragraph {
+  margin: 50px;
+  font-size: 30px;
+  color: #fff;
+  width: 550px;
+}
+/*basic css~*/
+
+
+/*box 1*/
+.box-1 {
+  height: 100vh;
+  background-image: url('http://www.magic4walls.com/wp-content/uploads/2013/12/Cup-Splash-Warm-Coffee.jpg');
+}
+/*box 1~*/
+
+
+/*box 2*/
+.box-2 {
+  height: 100vh;
+  background-image: url('http://bossfight.co/wp-content/uploads/2015/08/boss-fight-free-stock-high-resolution-images-photos-photography-coffee-cup-mug-warm.jpeg');
+}
+/*box 2~*/
+
+
+/*box 3*/
+.box-3 {
+  height: 100vh;
+  background-image: url('http://inesperkovic.com/wp-content/uploads/2014/08/ines-perkovic-a-simple-hello-nikon-d800-coffee-steamy-hot.jpg');
+}
+/*box 3~*/
+
+
+/*contact*/
+.contact {
+  position: relative;
+  height: 200vh;
+  background-image: url('http://www.simplemost.com/wp-content/uploads/2016/02/8747148779_4f13db9e05_b_coffee.jpg');
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.catch-container {
+  display: flex;
+  align-items: center;
+}
+
+.catch {
+  width: 400px;
+  font-size: 4vw;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.contact input {
+  margin-bottom: 50px;
+  background-color: transparent;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  font-size: 35px;
+}
+
+.contact textarea {
+    width: 700px;
+    margin-bottom: 50px;
+    height: 300px;
+    font-size: 40px;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+/*contact~*/
