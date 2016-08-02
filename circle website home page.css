@@ -1,0 +1,138 @@
+/*header*/
+.header {
+	box-shadow: 0px 0px 1px .5px #999;
+}
+
+.header li {
+	padding: 20px 25px;
+	font-size: 18px;
+	color: #666; 
+	display: inline-block;
+	transition: color .5s;
+}
+
+.header li:hover {
+	color: #FF780A;
+	cursor: pointer;
+}
+
+#home {
+	border-bottom: 2px solid #FFB442;
+}
+/*header~*/
+/*logo*/
+.logo_container {
+	margin: 75px auto;
+}
+
+.logo {
+	text-align: center;
+	font-size: 200px;
+}
+
+.x {
+	color: #FF780A;
+}
+
+.tra {
+	color: #444;
+}
+/*logo~*/
+/*welcome text*/
+.top_line, .bottom_line {
+	width: 35%;
+}
+.welcome_text_container h3 {
+	padding: 5px 0px;
+	color: #999;
+	text-align: center;
+}
+/*welcome text~*/
+/*slider*/
+.slider_container {
+	position: relative;
+    width: 1300px;
+    height: 700px;
+    overflow: hidden;
+    margin: 50px auto;
+}
+
+.slider_container .slides {
+    display: block;
+    width: 6000px;
+    height: 400px;
+    margin: 0;
+    padding: 0;
+}
+
+.slider_container .slide {
+	background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    list-style-type: none;
+    float: top;
+    width: 1300px;
+    height: 700px;
+}
+
+.image_1 {
+	background-image: url('http://www.apronstringsdesigns.com/file/2016/02/Jonathan-Fanning-Photography.jpg');
+}
+
+.image_2 {
+	background-image: url('http://nordicaphotography.com/wp-content/uploads/2014/03/Nordica-Photography-02.jpg');
+}
+
+.image_3 {
+	background-image: url('http://jamidavisphotography.com/wp-content/uploads/2016/02/St.-Petersburg-Photography-2.jpg');
+}
+
+.image_4 {
+	background-image: url('http://www.apronstringsdesigns.com/file/2016/02/Jonathan-Fanning-Photography.jpg');
+}
+/*slider~*/
+/*services*/
+.services_container_main {
+	background-color: #FAFAFA;
+	margin-bottom: 50px;
+}
+.services_container_main h2 {
+	text-align: center;
+	color: #FF780A;
+}
+
+.service_line {
+	margin: 15px auto;
+	background-color: #FF780A;
+	width: 2px;
+	height: 100px;
+}
+
+.services_container {
+	position: static;
+	font-size: 0;
+	text-align: center;
+}	
+
+.service_box {
+	background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+	display: inline-block;
+	border: solid 1px #444;
+	width: 50vh;
+	height: 50vh;
+}
+
+.service_box.box_1 {
+	background-image: url('http://www.apronstringsdesigns.com/file/2016/02/Jonathan-Fanning-Photography.jpg');
+}
+
+.service_box.box_2 {
+	background-image: url('http://jamidavisphotography.com/wp-content/uploads/2016/02/St.-Petersburg-Photography-2.jpg');
+}
+
+.service_box.box_3 {
+	background-image: url('http://nordicaphotography.com/wp-content/uploads/2014/03/Nordica-Photography-02.jpg');
+}
+/*services~*/

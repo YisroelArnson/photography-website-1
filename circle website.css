@@ -1,0 +1,15 @@
+.header {
+	box-shadow: 0px 0px 1px .5px #999;
+}
+
+.header li {
+	padding: 20px 25px;
+	font-size: 18px;
+	color: #666;
+	display: inline-block;
+	transition: border-bottom;
+}
+
+.header li:hover {
+	border-bottom: 1px solid #FFB442;
+}

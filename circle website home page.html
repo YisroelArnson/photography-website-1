@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="circle website home page.css">
+	<link rel="stylesheet" type="text/css" href="normalize.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<title>Circle Website</title>
+<!-- begining animation~ -->
+ 	<script>
+		$(document).ready(function(){			
+			$('.header').slideUp(0).delay(800).slideDown(1400);
+			$('.logo_container').slideUp(0).delay(800).slideDown(1400);
+			$('.welcome_text_container').fadeOut(0).delay(2000).fadeIn(1400);
+			$('.slider_container').slideUp(0).delay(2500).fadeIn(2000);
+			$('.services_container_main').slideUp(0).delay(2500).fadeIn(2000);
+		});
+	</script>  
+<!-- begining animation~ -->
+<!-- slider code -->
+	<script>
+		$(function() {
+			var width = 700;
+			var animationSpeed = 1000;
+			var pause = 3000;
+			var current_slide = 1;
+			var slides_amount = 4;
+
+			var $slider_container = $('.slider_container');  
+			var $slides = $slider_container.find('.slides');
+			var slide = $slides.find('.slide');
+
+			var interval;
+
+			function startSlider() {
+				interval = setInterval(function() {
+					$slides.animate({'margin-top': '-=' + width}, animationSpeed, function(){
+						current_slide += 1;
+						if(current_slide === slides_amount) {
+							current_slide = 1;
+							$slides.css('margin-top', 0);
+						}					
+					});
+				}, pause);
+			}
+
+			function pauseSlider() {
+				clearInterval(interval);
+			}
+
+			$slider_container.on('mouseenter', pauseSlider).on('mouseleave', startSlider);
+
+			startSlider();
+		});
+	</script>
+<!-- slider code~ -->
+</head>
+<body>
+<!-- header -->
+	<div class="header">
+		<ul>
+			<li id="home">Home</li>
+			<li id="porfolio">Portfolio</li>
+			<li id="contact">Contact</li>
+		</ul>
+	</div>
+<!-- header~ -->
+<!-- logo -->
+	<div class="logo_container">
+		<div class="logo">
+			<div class="x">X</div> 
+			<div class="tra">Tra</div>
+		</div>
+	</div>
+<!-- logo~ -->
+<!-- welcome text -->
+	<div class="welcome_text_container">
+		<hr class="top_line">
+		<h3>Extra Ordinary Photography</h3>
+		<hr class="bottom_line">
+	</div>
+<!-- welcome text~ -->
+<!-- slider -->
+	<div class="slider_container">
+		<ul class="slides">
+			<li class="slide image_1"></li>
+			<li class="slide image_2"></li>
+			<li class="slide image_3"></li>
+			<li class="slide image_4"></li>
+		</ul>
+	</div>
+<!-- slider~ -->
+<!-- services -->
+	<div class="services_container_main">
+		<h2>Services</h2>
+		<div class="service_line"></div>
+		<ul class="services_container">
+			<li class="service_box box_1"></li>
+			<li class="service_box box_2"></li>
+			<li class="service_box box_3"></li>
+		</ul>
+	</div>
+<!-- services -->
+</body>
+</html>
